@@ -25,7 +25,7 @@ default["users"]["sshkeys"] = {
 }
 
 default["users"]["castles"] = {
-  "tboerger-base" => "tboerger/homeshick-base"
+  "tboerger-base" => "tboerger/homeshick-base",
   "tboerger-linux" => "tboerger/homeshick-linux"
 }
 
