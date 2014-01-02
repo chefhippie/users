@@ -30,3 +30,4 @@ default["users"]["castles"] = {
 }
 
 default["users"]["users"] = {}
+default["users"]["data_bag"] = "users"
