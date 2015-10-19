@@ -31,7 +31,7 @@ sshkey "root" do
   keys node["users"]["sshkeys"]
 end
 
-users = if Chef::Config[:solo] and not node.recipes.include?("chef-solo-search")
+users = if Chef::Config[:solo] and not (node.recipes.include?("chef-solo-search") || node.recipes.include?("chef-solo-search::default"))
   node["users"]["users"]
 else
   search(
